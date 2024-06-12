@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "ToDo.Controllers.SomethingController",
+    "Method": "GetAll",
+    "RelativePath": "BaiTap/ToDo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDo.Controllers.SomethingController",
+    "Method": "Create",
+    "RelativePath": "BaiTap/ToDo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "somethingRequestDto",
+        "Type": "ToDo.Dtos.CreateSomethingRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDo.Controllers.SomethingController",
+    "Method": "GetById",
+    "RelativePath": "BaiTap/ToDo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDo.Controllers.SomethingController",
+    "Method": "Delete",
+    "RelativePath": "BaiTap/ToDo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
