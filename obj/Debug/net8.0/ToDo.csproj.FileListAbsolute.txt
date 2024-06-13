@@ -144,3 +144,10 @@ D:\C#\BaiTap\todo\obj\Debug\net8.0\refint\ToDo.dll
 D:\C#\BaiTap\todo\obj\Debug\net8.0\ToDo.pdb
 D:\C#\BaiTap\todo\obj\Debug\net8.0\ToDo.genruntimeconfig.cache
 D:\C#\BaiTap\todo\obj\Debug\net8.0\ref\ToDo.dll
+D:\C#\BaiTap\ToDo\bin\Debug\net8.0\angular.json
+D:\C#\BaiTap\ToDo\bin\Debug\net8.0\package-lock.json
+D:\C#\BaiTap\ToDo\bin\Debug\net8.0\package.json
+D:\C#\BaiTap\ToDo\bin\Debug\net8.0\tsconfig.app.json
+D:\C#\BaiTap\ToDo\bin\Debug\net8.0\tsconfig.json
+D:\C#\BaiTap\ToDo\bin\Debug\net8.0\tsconfig.spec.json
+D:\C#\BaiTap\ToDo\bin\Debug\net8.0\System.Web.Cors.dll

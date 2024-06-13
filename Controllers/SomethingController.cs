@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using ToDo.Data;
 using ToDo.Dtos;
 using ToDo.Interfaces;
@@ -19,6 +20,7 @@ namespace ToDo.Controllers
             _somethingRepo = somethingRepo;
         }
 
+        [EnableCors("AllowSpecificOrigin")]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -29,6 +31,7 @@ namespace ToDo.Controllers
             var somethings = await _somethingRepo.GetAllAsync();
             return Ok(somethings);
         }
+        [EnableCors("AllowSpecificOrigin")]
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetById([FromRoute] int id)
         {
@@ -43,6 +46,7 @@ namespace ToDo.Controllers
             }
             return Ok(something);
         }
+        [EnableCors("AllowSpecificOrigin")]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateSomethingRequestDto somethingRequestDto)
         {
@@ -57,6 +61,7 @@ namespace ToDo.Controllers
             var createdSomething = await _somethingRepo.CreateAsync(somethingModel);
             return CreatedAtAction(nameof(GetById), new {id=createdSomething.Id}, createdSomething);
         }
+        [EnableCors("AllowSpecificOrigin")]
         [HttpDelete]
         [Route("{id:int}")]
         public async Task<IActionResult> Delete([FromRoute] int id)
